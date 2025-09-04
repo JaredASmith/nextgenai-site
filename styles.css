@@ -86,11 +86,12 @@ a{color:inherit; text-decoration:none}
 .lead{font-size:1.2rem; color:#334155; max-width:54ch}
 .cta-row{display:flex; gap:12px; margin-top:18px}
 
-.brand {
-  display: flex;
-  align-items: center;
-  text-decoration: none; /* no underline */
+.brand img {
+  height: 80px;   /* force it to display at this size */
+  width: auto;
+  display: block;
 }
+
 
 .logo-container {
   height: 80px;      /* bump this up (try 70–90px range) */
