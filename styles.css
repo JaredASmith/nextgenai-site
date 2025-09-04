@@ -87,23 +87,17 @@ a{color:inherit; text-decoration:none}
 .cta-row{display:flex; gap:12px; margin-top:18px}
 
 .brand img {
-  height: 80px;   /* force it to display at this size */
+  height: 80px;   /* try 80–100px for balance */
   width: auto;
   display: block;
 }
 
-
-.logo-container {
-  height: 80px;      /* bump this up (try 70–90px range) */
-  display: flex;
-  align-items: center;
+/* make sure the header has enough padding for the taller logo */
+.header-inner {
+  align-items: center;   /* keeps logo + nav vertically aligned */
+  padding: 20px 0;       /* increase from 14px to give breathing room */
 }
 
-.logo-container img {
-  max-height: 100%;
-  width: auto;
-  display: block;
-}
 
 
 /* Hover effect */
