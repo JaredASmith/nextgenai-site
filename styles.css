@@ -1,15 +1,15 @@
-:root {
-  --deep:#0f172a;      
-  --text:#111827;      
-  --muted:#6b7280;     
-  --line:#e5e7eb;      
+:root{
+  --deep:#0f172a;      /* slate-900 */
+  --text:#111827;      /* gray-900 */
+  --muted:#6b7280;     /* gray-500 */
+  --line:#e5e7eb;      /* gray-200 */
 
-  --blue:#1d4355;      /* new brand primary */
+  --blue:#1d4355;      /* deep secondary */
   --blue-600:#16323f;  /* darker hover/active */
-  --green:#16a34a;     
+  --teal-dark:#46bfb8; /* primary button base */
+  --teal:#65dfd8;      /* bright accent */
   --bg:#ffffff;
 }
-
 
 *{box-sizing:border-box}
 html,body{height:100%}
@@ -39,10 +39,11 @@ p{margin:0 0 1rem}
   backdrop-filter:saturate(180%) blur(10px);
   background:rgba(255,255,255,.7);
   border-bottom:1px solid var(--line);
+  overflow:visible; /* allow logo to extend */
 }
-.header-inner{display:flex; align-items:center; justify-content:space-between; padding: 6px 0}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
 .brand{display:flex; align-items:center; flex:0 0 auto}
-.brand img{display:block; height:140px; width:auto; flex-shrink:0}
+.brand img{display:block; height:180px; width:auto; flex-shrink:0; margin-top:-40px; margin-bottom:-40px;}
 
 /* Nav + Buttons */
 .nav{display:flex; gap:.5rem; align-items:center; margin-left:auto}
@@ -54,17 +55,17 @@ p{margin:0 0 1rem}
 }
 .btn:hover{transform:translateY(-1px)}
 .btn-ghost{background:#fff; color:var(--deep); border-color:var(--line)}
-.btn-ghost:hover{border-color:var(--blue); color:var(--blue)}
-.btn-primary{background:var(--blue); color:#fff; box-shadow:0 6px 20px rgba(37,99,235,.22)}
-.btn-primary:hover{background:var(--blue-600); box-shadow:0 8px 26px rgba(37,99,235,.28)}
+.btn-ghost:hover{border-color:var(--teal-dark); color:var(--teal-dark)}
+.btn-primary{background:var(--teal-dark); color:#fff; box-shadow:0 6px 20px rgba(101,223,216,.25)}
+.btn-primary:hover{background:var(--teal); box-shadow:0 8px 26px rgba(101,223,216,.35)}
 .btn-lg{padding:.9rem 1.25rem; font-size:1.05rem; border-radius:14px}
 
 /* Hero */
 .hero{
   position:relative; overflow:hidden; padding:96px 0;
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(37,99,235,.12), transparent 55%),
-    radial-gradient(800px 480px at -10% 10%, rgba(22,163,74,.10), transparent 60%),
+    radial-gradient(1200px 600px at 80% -10%, rgba(29,67,85,.25), transparent 55%),
+    radial-gradient(800px 480px at -10% 10%, rgba(101,223,216,.25), transparent 60%),
     linear-gradient(180deg,#ffffff 0%, #f8fafc 100%);
 }
 .hero:after{
@@ -81,7 +82,7 @@ p{margin:0 0 1rem}
 .hero-copy h1{
   font-size:3.2rem; line-height:1.1; margin-bottom:.75rem;
 }
-.hero-copy .accent{color:var(--blue)}
+.hero-copy .accent{color:var(--teal-dark)}
 .lead{font-size:1.2rem; color:#334155; max-width:54ch}
 .cta-row{display:flex; gap:12px; margin-top:18px}
 
@@ -111,7 +112,7 @@ p{margin:0 0 1rem}
   border:1px solid var(--line); border-radius:16px; background:#fff;
   box-shadow:0 10px 30px rgba(2,6,23,.05);
 }
-.stat .stat-title{font-weight:700; color:var(--blue); font-size:1.05rem}
+.stat .stat-title{font-weight:700; color:var(--teal-dark); font-size:1.05rem}
 .stat .stat-sub{color:var(--muted)}
 
 /* Pricing */
@@ -122,8 +123,8 @@ p{margin:0 0 1rem}
 .final-cta{
   padding:64px 0;
   background:
-    radial-gradient(700px 360px at 10% 0%, rgba(22,163,74,.10), transparent 55%),
-    radial-gradient(900px 520px at 90% 0%, rgba(37,99,235,.12), transparent 55%),
+    radial-gradient(700px 360px at 10% 0%, rgba(101,223,216,.25), transparent 55%),
+    radial-gradient(900px 520px at 90% 0%, rgba(29,67,85,.25), transparent 55%),
     linear-gradient(180deg,#ffffff 0%, #f8fafc 100%);
   border-top:1px solid var(--line);
 }
@@ -133,7 +134,7 @@ p{margin:0 0 1rem}
 /* Footer */
 .site-footer{border-top:1px solid var(--line); padding:22px 0; background:#fff}
 .footer-inner{display:flex; gap:14px; align-items:center; justify-content:center; flex-wrap:wrap}
-.footer-inner a{color:var(--blue); text-decoration:none}
+.footer-inner a{color:var(--teal-dark); text-decoration:none}
 .footer-inner a:hover{text-decoration:underline}
 
 /* Responsiveness */
@@ -148,21 +149,5 @@ p{margin:0 0 1rem}
   .hero{padding:80px 0}
   .hero-copy h1{font-size:2.2rem}
   .btn-lg{font-size:1rem}
-  .brand img{height:96px}
+  .brand img{height:100px; margin-top:-20px; margin-bottom:-20px}
 }
-
-/* Oversized logo that sticks out above/below the header bar */
-.site-header {
-  overflow: visible; /* allow logo to extend outside the bar */
-}
-
-.site-header .brand img {
-  height: 250px;   /* adjust 160–200px to taste */
-  width: auto;
-  display: block;
-  flex-shrink: 0;
-  max-width: none;
-  margin-top: -60px;   /* push logo upward */
-  margin-bottom: -60px; /* push logo downward */
-}
-
