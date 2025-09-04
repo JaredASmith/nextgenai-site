@@ -39,7 +39,7 @@ p{margin:0 0 1rem}
   background:rgba(255,255,255,.7);
   border-bottom:1px solid var(--line);
 }
-.header-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding: 6px 0}
 .brand{display:flex; align-items:center; flex:0 0 auto}
 .brand img{display:block; height:140px; width:auto; flex-shrink:0}
 
