@@ -4,11 +4,12 @@
   --muted:#6b7280;     
   --line:#e5e7eb;      
 
-  --blue:#4F46E5;      /* new brand primary */
-  --blue-600:#4338CA;  /* darker hover/active */
+  --blue:#1d4355;      /* new brand primary */
+  --blue-600:#16323f;  /* darker hover/active */
   --green:#16a34a;     
   --bg:#ffffff;
 }
+
 
 *{box-sizing:border-box}
 html,body{height:100%}
