@@ -150,11 +150,18 @@ p{margin:0 0 1rem}
   .brand img{height:96px}
 }
 
-/* Final logo sizing */
+/* Oversized logo that sticks out above/below the header bar */
+.site-header {
+  overflow: visible; /* allow logo to extend outside the bar */
+}
+
 .site-header .brand img {
-  height: 250px;   /* try 160–200px for bold impact */
+  height: 180px;   /* adjust 160–200px to taste */
   width: auto;
   display: block;
   flex-shrink: 0;
   max-width: none;
+  margin-top: -40px;   /* push logo upward */
+  margin-bottom: -40px; /* push logo downward */
 }
+
