@@ -161,7 +161,7 @@ p{margin:0 0 1rem}
   display: block;
   flex-shrink: 0;
   max-width: none;
-  margin-top: -40px;   /* push logo upward */
-  margin-bottom: -40px; /* push logo downward */
+  margin-top: -60px;   /* push logo upward */
+  margin-bottom: -60px; /* push logo downward */
 }
 
