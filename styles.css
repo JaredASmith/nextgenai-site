@@ -151,9 +151,9 @@ form input:focus, form textarea:focus{outline:2px solid rgba(37,99,235,.25); bor
 
 .brand { flex: 0 0 auto; }
 .brand img{
-  height: 160px !important;   /* set your desired size */
-  width: auto !important;     /* preserve aspect ratio */
+  height: 160px ;   /* set your desired size */
+  width: auto ;     /* preserve aspect ratio */
   display: block;
-  max-width: none !important; /* ignore any global img max-width */
+  max-width: none ; /* ignore any global img max-width */
   flex-shrink: 0;             /* don't let flex squeeze it */
 }
