@@ -149,3 +149,12 @@ p{margin:0 0 1rem}
   .btn-lg{font-size:1rem}
   .brand img{height:96px}
 }
+
+/* Final logo sizing */
+.site-header .brand img {
+  height: 180px;   /* try 160–200px for bold impact */
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+  max-width: none;
+}
