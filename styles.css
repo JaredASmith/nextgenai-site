@@ -1,12 +1,12 @@
-:root{
-  --deep:#0f172a;      /* slate-900 */
-  --text:#111827;      /* gray-900 */
-  --muted:#6b7280;     /* gray-500 */
-  --line:#e5e7eb;      /* gray-200 */
+:root {
+  --deep:#0f172a;      
+  --text:#111827;      
+  --muted:#6b7280;     
+  --line:#e5e7eb;      
 
-  --blue:#2563eb;      /* brand primary */
-  --blue-600:#1d4ed8;
-  --green:#16a34a;     /* accent */
+  --blue:#4F46E5;      /* new brand primary */
+  --blue-600:#4338CA;  /* darker hover/active */
+  --green:#16a34a;     
   --bg:#ffffff;
 }
 
