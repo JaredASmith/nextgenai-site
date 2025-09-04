@@ -35,17 +35,22 @@ a{color:inherit; text-decoration:none}
 .muted{color:var(--muted)}
 
 /* Header */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 30;
+.site-header{
+  position: sticky; top: 0; z-index: 30;
   backdrop-filter: saturate(180%) blur(10px);
   background: rgba(255,255,255,.7);
-  border-bottom: 1px solid v
+  border-bottom: 1px solid var(--line);
+
+  /* IMPORTANT: let content define height while we debug */
+  display: flex;
+  align-items: center;
+  height: auto;          /* ← remove any fixed height */
+  overflow: visible;     /* ← allow logo to extend if needed */
 }
+
 .header-inner{display:flex; align-items:center; justify-content:space-between; padding:6px 0}
 .brand{display:flex; align-items:center; flex: 0 0 auto;}
-.brand img{height:150px !important; width:auto !important; display: block; flex-shrink: 0;}
+/*.brand img{height:150px !important; width:auto !important; display: block; flex-shrink: 0;}
 
 /* Nav + Buttons */
 .nav{display:flex; gap:.5rem; align-items:center}
@@ -140,3 +145,15 @@ form input:focus, form textarea:focus{outline:2px solid rgba(37,99,235,.25); bor
 @media (max-width: 1024px){ .hero-copy h1{font-size:2.6rem} }
 @media (max-width: 900px){ .hero-grid{grid-template-columns:1fr} }
 @media (max-width: 640px){ .section{padding:56px 0} .hero{padding:80px 0} .hero-copy h1{font-size:2.2rem} .btn-lg{font-size:1rem} }
+
+/* FINAL OVERRIDE */
+.header-inner { align-items: center; padding: 8px 0; }
+
+.brand { flex: 0 0 auto; }
+.brand img{
+  height: 160px !important;   /* set your desired size */
+  width: auto !important;     /* preserve aspect ratio */
+  display: block;
+  max-width: none !important; /* ignore any global img max-width */
+  flex-shrink: 0;             /* don't let flex squeeze it */
+}
