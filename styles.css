@@ -42,8 +42,8 @@ a{color:inherit; text-decoration:none}
   border-bottom:1px solid var(--line);
 }
 .header-inner{display:flex; align-items:center; justify-content:space-between; padding:20px 0}
-.brand{display:flex; align-items:center; gap:10px}
-.brand img{display:block; width:36px; height:36px}
+.brand{display:flex; align-items:center; flex: 0 0 auto;}
+.brand img{width:auto; height:80px; max-width: none;flex-shrink: 0;}
 
 /* Nav + Buttons */
 .nav{display:flex; gap:.5rem; align-items:center}
@@ -85,19 +85,6 @@ a{color:inherit; text-decoration:none}
 .hero-copy .accent{color:var(--blue)}
 .lead{font-size:1.2rem; color:#334155; max-width:54ch}
 .cta-row{display:flex; gap:12px; margin-top:18px}
-
-.brand img {
-  height: 80px;   /* try 80–100px for balance */
-  width: auto;
-  display: block;
-}
-
-/* make sure the header has enough padding for the taller logo */
-.header-inner {
-  align-items: center;   /* keeps logo + nav vertically aligned */
-  padding: 20px 0;       /* increase from 14px to give breathing room */
-}
-
 
 
 /* Hover effect */
