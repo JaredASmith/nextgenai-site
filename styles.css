@@ -152,7 +152,7 @@ p{margin:0 0 1rem}
 
 /* Final logo sizing */
 .site-header .brand img {
-  height: 180px;   /* try 160–200px for bold impact */
+  height: 250px;   /* try 160–200px for bold impact */
   width: auto;
   display: block;
   flex-shrink: 0;
