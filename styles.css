@@ -41,9 +41,9 @@ a{color:inherit; text-decoration:none}
   background:rgba(255,255,255,.7);
   border-bottom:1px solid var(--line);
 }
-.header-inner{display:flex; align-items:center; justify-content:space-between; padding:20px 0}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding:6px 0}
 .brand{display:flex; align-items:center; flex: 0 0 auto;}
-.brand img{height:80px !important; width:auto; display: block; flex-shrink: 0;}
+.brand img{height:150px !important; width:auto !important; display: block; flex-shrink: 0;}
 
 /* Nav + Buttons */
 .nav{display:flex; gap:.5rem; align-items:center}
