@@ -40,10 +40,11 @@ p{margin:0 0 1rem}
   border-bottom:1px solid var(--line);
 }
 .header-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
-.brand img{display:block}
+.brand{display:flex; align-items:center; flex:0 0 auto}
+.brand img{display:block; height:140px; width:auto; flex-shrink:0}
 
 /* Nav + Buttons */
-.nav{display:flex; gap:.5rem; align-items:center}
+.nav{display:flex; gap:.5rem; align-items:center; margin-left:auto}
 .btn{
   display:inline-flex; align-items:center; justify-content:center;
   padding:.65rem 1rem; border-radius:12px; font-weight:600; text-decoration:none;
@@ -146,4 +147,5 @@ p{margin:0 0 1rem}
   .hero{padding:80px 0}
   .hero-copy h1{font-size:2.2rem}
   .btn-lg{font-size:1rem}
+  .brand img{height:96px}
 }
